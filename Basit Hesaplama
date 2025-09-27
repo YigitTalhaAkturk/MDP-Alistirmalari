@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+   
+   int sayi_1;
+   int sayi_2;
+   int toplam=0;
+   int fark=0;
+   int carpim=0;
+   float bölüm=0;
+ 
+    printf("selam! bu sistemde sececeginiz 2 sayi ile temel islemler yapilir.\n\n");
+    printf("islem yapacaginiz birinci sayiyi giriniz:");
+    scanf("%d",&sayi_1);
+    printf("islem yapacaginiz ikinci sayiyi giriniz:");
+    scanf("%d",&sayi_2);
+   
+   toplam=sayi_1+sayi_2;
+   fark=sayi_1-sayi_2;
+   carpim=sayi_1*sayi_2;
+   bölüm=(float)sayi_1/sayi_2;
+   
+    printf("\nsayilarin toplami=%d\n",toplam);
+    printf("sayilarin farki=%d\n",fark);
+    printf("sayilarin carpimi=%d\n",carpim);
+    printf("sayilarin bölümü=%.2f\n",bölüm);
+    return 0;
+}
