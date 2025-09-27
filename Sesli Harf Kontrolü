@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+   
+ char harf;
+  
+ printf("Selam! Bu sistemde girdiginiz harfin seslimi-sessizmi oldugu bulunur.\n\n");
+ printf("harf giriniz:");
+ scanf("%c",&harf);
+ 
+ switch (harf)
+ {
+     case 'a' : printf("\n %c harfi sesli harftir",harf);break;
+     case 'e' : printf("\n %c harfi sesli harftir",harf);break;
+     case 'i' : printf("\n %c harfi sesli harftir",harf);break;
+     case 'u' : printf("\n %c harfi sesli harftir",harf);break;
+     case 'o' : printf("\n %c harfi sesli harftir",harf);break;
+     default : printf("\n %c harfi sessiz harftir",harf);break;
+     
+
+ }
+ 
+ 
+ 
+return 0;
+}
