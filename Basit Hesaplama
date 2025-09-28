@@ -7,7 +7,7 @@ int main() {
    int toplam=0;
    int fark=0;
    int carpim=0;
-   float bölüm=0;
+   float bolum=0;
  
     printf("selam! bu sistemde sececeginiz 2 sayi ile temel islemler yapilir.\n\n");
     printf("islem yapacaginiz birinci sayiyi giriniz:");
@@ -18,11 +18,11 @@ int main() {
    toplam=sayi_1+sayi_2;
    fark=sayi_1-sayi_2;
    carpim=sayi_1*sayi_2;
-   bölüm=(float)sayi_1/sayi_2;
+   bolum=(float)sayi_1/sayi_2;
    
     printf("\nsayilarin toplami=%d\n",toplam);
     printf("sayilarin farki=%d\n",fark);
     printf("sayilarin carpimi=%d\n",carpim);
-    printf("sayilarin bölümü=%.2f\n",bölüm);
+    printf("sayilarin bolumu=%.2f\n",bolum);
     return 0;
 }
