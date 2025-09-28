@@ -1,0 +1,33 @@
+
+int a;
+int sayi;
+
+int main() {
+
+    printf("Selam! Bu sistemde 1'den baslayip kullanicinin girdigi sayiya kadar,\n3'un katlari atlanarak ekrana yazdirilir.\n");
+    printf("\nBir sayi giriniz: ");
+    scanf("\n%d", &sayi);
+
+    if (sayi <1)
+        {
+
+        printf("\nsayi 1'den kucuktur tekrar deneyiniz");
+
+    }
+
+    for (int a = 1; a<=sayi; a++) {
+
+        if (a > 50)
+            {
+            printf("\n\nGirdiginiz sayi 50'den buyuk isleme devam edilmiyor!\n");
+            break;
+        }
+        if (a % 3 == 0)
+         {
+            continue;
+        }
+        printf("\n%d",a);
+    }
+
+    return 0;
+}
