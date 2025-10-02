@@ -1,0 +1,39 @@
+int main() {
+    int a;
+    int b;
+    int c;
+    int degisken=0;
+
+    printf("Bu sistem kullanicinin girdigi sayilari kucukten buyuge siralar\n (girilen sayilar birbirine esit olmamali)");
+    printf("\n1. sayiyi girin: ");
+    scanf("%d", &a);
+
+    printf("2. sayiyi girin: ");
+    scanf("%d", &b);
+
+    printf("3. sayiyi girin: ");
+    scanf("%d", &c);
+
+    if (a > b) {
+        degisken = a;
+        a = b;
+        b = degisken;
+    }
+
+    if (a > c) {
+        degisken = a;
+        a = c;
+        c = degisken;
+    }
+
+    if (b > c) {
+        degisken = b;
+        b = c;
+        c = degisken;
+    }
+
+
+      printf("\nKucukten buyuge siralama: %d < %d < %d\n", a, b, c);
+
+    return 0;
+}
