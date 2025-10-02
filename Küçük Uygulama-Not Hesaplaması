@@ -1,0 +1,37 @@
+int main() {
+    int ogrenci = 1;
+    float not1;
+    float not2;
+    float not3;
+    float not4;
+    float ortalama;
+
+    while (ogrenci <= 5) {
+        printf("\n%d. ogrencinin notlarini girin:\n", ogrenci);
+
+        printf("  1. not: ");
+        scanf("%f", &not1);
+
+        printf("  2. not: ");
+        scanf("%f", &not2);
+
+        printf("  3. not: ");
+        scanf("%f", &not3);
+
+        printf("  4. not: ");
+        scanf("%f", &not4);
+
+        ortalama = (not1 + not2 + not3 + not4) / 4;
+
+        printf("--> Ortalama: %.2f - ", ortalama);
+
+        switch (ortalama >= 50) {
+            case 1: printf("Gecti\n"); break;
+            case 0: printf("Kaldi\n"); break;
+        }
+
+        ogrenci++;
+    }
+    printf("Butun ogrencilerin not hesaplamalari yapildi.");
+    return 0;
+}
